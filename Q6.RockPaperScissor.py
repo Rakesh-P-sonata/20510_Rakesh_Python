@@ -1,8 +1,3 @@
-user_action1 = input("Enter a choice rock, paper, scissors: ")
-user_action2 = input("Enter a choice rock, paper, scissors: ")
-print(f"\nYou chose {user_action1}, User 2 chose {user_action2}.\n")
-
-
 def RPS(user_action1, user_action2):
     if user_action1 == user_action2:
         print(f"Both players selected {user_action1}. It's a tie!")
@@ -23,4 +18,13 @@ def RPS(user_action1, user_action2):
             print("Rock smashes scissors! You lose!")
 
 
-RPS(user_action1, user_action2)
+
+pa="yes"
+while(pa=="yes"):
+    user_action1 = input("Enter a choice rock, paper, scissors: ")
+    user_action2 = input("Enter a choice rock, paper, scissors: ")
+    print(f"\nYou chose {user_action1}, User 2 chose {user_action2}.\n")
+    RPS(user_action1, user_action2)
+    playagain = input("Enter yes or no")
+    pa = playagain
+

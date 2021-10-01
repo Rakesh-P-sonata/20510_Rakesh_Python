@@ -18,7 +18,7 @@ def main():
     print('Welcome to the birthday dictionary.')
     all(Birthdays)
     who = input("Who's birthday do you want to look up?")
-    result = search(who,Birthdays)
+    result = search(who, Birthdays)
     if result == None:
         print('No Data')
     else:
